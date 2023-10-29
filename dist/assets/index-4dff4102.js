@@ -1,8 +1,4 @@
-
-const app = Vue.createApp({});
-
-app.component('link-cascadia', {
-    template: `
+import"https://cdn.jsdelivr.net/npm/vue@3.2.0/dist/vue.esm-browser.js";(function(){const o=document.createElement("link").relList;if(o&&o.supports&&o.supports("modulepreload"))return;for(const e of document.querySelectorAll('link[rel="modulepreload"]'))i(e);new MutationObserver(e=>{for(const t of e)if(t.type==="childList")for(const r of t.addedNodes)r.tagName==="LINK"&&r.rel==="modulepreload"&&i(r)}).observe(document,{childList:!0,subtree:!0});function n(e){const t={};return e.integrity&&(t.integrity=e.integrity),e.referrerPolicy&&(t.referrerPolicy=e.referrerPolicy),e.crossOrigin==="use-credentials"?t.credentials="include":e.crossOrigin==="anonymous"?t.credentials="omit":t.credentials="same-origin",t}function i(e){if(e.ep)return;e.ep=!0;const t=n(e);fetch(e.href,t)}})();const s=Vue.createApp({});s.component("link-cascadia",{template:`
     <a href="#" class="group flex items-center text-lg font-cascadia text-do-blue-light font-bold hover:text-do-blue-medium hover:duration-200">
         <slot></slot>
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4 group-hover:ml-1 group-hover:duration-150">
@@ -10,11 +6,7 @@ app.component('link-cascadia', {
         </svg>
     </a>
     
-    `,
-});
-
-app.component('panel-blog', {
-    template: `
+    `});s.component("panel-blog",{template:`
     <div class="w-1/4 bg-white shadow-lg rounded-lg">
         <div>
             <slot name='image'></slot>
@@ -35,7 +27,4 @@ app.component('panel-blog', {
             </div>
         </div>
     </div>
-    `
-});
-
-app.mount('#app');
+    `});s.mount("#app");
