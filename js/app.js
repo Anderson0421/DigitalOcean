@@ -1,4 +1,3 @@
-
 const app = Vue.createApp({});
 
 app.component('link-cascadia', {
