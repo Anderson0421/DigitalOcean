@@ -1,4 +1,5 @@
-import { createApp } from 'https://cdn.jsdelivr.net/npm/vue@3.2.0/dist/vue.esm-browser.js';
+import { createApp } from 'vue'
+
 
 const app = Vue.createApp({});
 
