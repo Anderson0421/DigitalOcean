@@ -1,6 +1,5 @@
 import { createApp } from 'vue'
 
-
 const app = Vue.createApp({});
 
 app.component('link-cascadia', {
